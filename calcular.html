@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo Matematico</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Calcular o Valor 1 e Valor 2</legend>
+            <label>Valor 1:</label>
+            <input type="text" id="txt1" placeholder="Coloque um Valor aqui">
+            <label>Valor 2:</label>
+            <input type="text" id="txt2" placeholder="Coloque um Valor aqui">
+            <legend>Escolha um Botão para calcular:</legend>
+            <div class="botao__ordem">
+                <button onclick="soma(event)" class="botao1 botao">Somar</button>
+                <button onclick="menos(event)" class="botao2 botao">Subtrair</button>
+                <button onclick="multiplicar(event)" class="botao3 botao">Multiplicar</button>
+                <button onclick="divisao(event)" class="botao4 botao">Dividir</button>
+            </div>
+            <span class="resultado"></span>
+        </fieldset>
+    </form>
+    <script src="./calcular.js"></script>
+</body>
+</html>
