@@ -1,30 +1,24 @@
 const resultado = document.querySelector(".resultado")
+var s1 = document.getElementById("n1");
+var s2 = document.getElementById("n2");
 
 function multiplicar(event) {
     event.preventDefault();
-    var s1 = document.getElementById("txt1").value;
-    var s2 = document.getElementById("txt2").value;
-    var s3 = s1 * s2;
+    var s3 = s1.value * s2.value;
     resultado.textContent = `O Resultado é: ${s3}`
 }
 function divisao(event){
     event.preventDefault();
-    var s1 = document.getElementById("txt1").value;
-    var s2 = document.getElementById("txt2").value;
-    var s3 = Math.round(s1) / Math.round(s2);
+    var s3 = s1.value / s2.value;
     resultado.textContent = `O Resultado é: ${s3}`
 }
 function soma(event){
     event.preventDefault();
-    var s1 = document.getElementById("txt1").value;
-    var s2 = document.getElementById("txt2").value;
-    var s3 = Math.round(s1) + Math.round(s2);
+    var s3 = Math.round(s1.value) + Math.round(s2.value);
     resultado.textContent = `O Resultado é: ${s3}`
 }
 function menos(event){
     event.preventDefault();
-    var s1 = document.getElementById("txt1").value;
-    var s2 = document.getElementById("txt2").value;
-    var s3 = s1 - s2;
+    var s3 = s1.value - s2.value;
     resultado.textContent = `O Resultado é: ${s3}`
 }
